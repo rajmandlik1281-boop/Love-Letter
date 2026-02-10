@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #fde2e4, #fadadd);
+  font-family: 'Patrick Hand', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro button {
+  padding: 20px 40px;
+  font-size: 22px;
+  border: none;
+  border-radius: 30px;
+  background: #ff8fab;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.container.hidden {
+  display: none;
+}
+
+.clipboard {
+  width: 380px;
+  position: relative;
+}
+
+.clip {
+  width: 120px;
+  height: 40px;
+  background: #b0b0b0;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.paper {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
