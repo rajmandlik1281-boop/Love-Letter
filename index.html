@@ -1,0 +1,62 @@
+diff
+
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="intro" id="intro">
+  <button onclick="openLetter()">Open My Promise 💌</button>
+</div>
+
+<div class="container hidden" id="letter">
+  <div class="clipboard">
+    <div class="clip"></div>
+    <div class="paper">
+      <h1>A Promise I’ll Keep</h1>
+      <p id="text"></p>
+    </div>
+  </div>
+</div>
+
+<script>
+const letter = `My love,
+
+I don’t know what the future looks like in detail, but I know one thing with absolute certainty that I want to face it with you bala. After all these years, you are still my calm, my comfort, and the place my heart naturally returns to.
+
+I promise to choose you, not only when things are easy, but especially when they aren’t. I promise to hold your hand through confusion, silence, distance, and change. I promise you that you have a new and the best Dhruv hereafter to care for you, to understand you, and to hold you like a baby in his arms honey...
+
+I promise to grow with you, not away from you. To learn you deeper with time, not take you for granted. To protect what we have with patience, honesty, and effort.
+
+You are not just someone I love, you are someone I respect, admire, and feel safe with. My heart feels steady with you, like it knows it’s finally where it belongs.
+
+This is my promise: as long as I’m here, you will never walk alone. Not today, not tomorrow, not ever.
+
+Always yours,
+— Dhruv`;
+
+let i = 0;
+
+function typeLetter() {
+  if (i < letter.length) {
+    document.getElementById("text").innerHTML += letter.charAt(i).replace(/\n/g,"<br>");
+    i++;
+    setTimeout(typeLetter, 35);
+  }
+}
+
+function openLetter() {
+  document.getElementById("intro").style.display = "none";
+  document.getElementById("letter").classList.remove("hidden");
+  typeLetter();
+}
+</script>
+
+</body>
+</html>
